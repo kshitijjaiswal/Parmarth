@@ -1,0 +1,226 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<style>
+
+.container{
+transform: translate(0,100px);
+ width:40%;  
+  height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #e6e6e6;
+}
+
+.w{
+width: 550px;
+  background: transparent;
+  padding: 30px 0 80px 0;
+}
+.form{
+  width: 100%;
+}
+
+.ti{
+ display: block;
+  font-family: Oswald-Medium;
+  font-size: 30px;
+  color: black;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.in{
+ width: 100%;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 17px;
+}
+
+.input{
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Oswald-Medium;
+  font-size: 15px;
+  color: #43383e;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+.labe{
+ display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 62px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999999;
+}
+
+.box{
+width: 300px;
+height: 500px;
+background-color: transparent;
+opacity:0.5;
+
+}
+
+
+
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 2px;
+  pointer-events: none;
+
+  font-family: Oswald-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tr{
+transform: translate(0,-200px);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+	transform: translate(700px,50px);
+    border-radius: 10px;
+	
+	}
+
+
+
+</style>
+
+</head>
+
+<body style="background-image:url(b1.jpg);">
+
+<button class="button"><a href="../parmarth22.html">Parmarth</a></button>
+
+<div class="container" style="background-color:cyaan;">
+	
+		
+		<div class="w">
+		
+			<form class="form validate-form">
+				<span class="ti">
+					CONTACT
+				</span>
+
+				<div class="in validate-input" data-validate="Name is required">
+					<input class="input" id="name" type="text" name="name" placeholder="Name">
+					<label class="label" for="name">
+						<span class="lnr lnr-user"></span>
+					</label>
+				</div>
+
+				<div class="in validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<input class="input" id="email" type="text" name="email" placeholder="Email">
+					<label class="label" for="email">
+						<span class="lnr lnr-envelope"></span>
+					</label>
+				</div>
+
+				<div class="in validate-input" data-validate="Phone is required">
+					<input class="input" id="phone" type="text" name="phone" placeholder="Phone">
+					<label class="label" for="phone">
+						<span class="lnr lnr-phone-handset"></span>
+					</label>
+				</div>
+				
+					<div class="in validate-input" data-validate="Message is required">
+					<textarea row="5" cols="40 "class="input" name="message" placeholder="Your message..."></textarea>
+				</div>
+				
+				<button type="button" class="btn btn-success">Submit</button>
+</div>
+</div>
+
+</body>
